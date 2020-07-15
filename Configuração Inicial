@@ -1,0 +1,8 @@
+1. Criar uma virtual env
+$ virtualenv -p <versão-python> <nome-env>
+
+2. Instalar o Django (https://www.djangoproject.com/):
+$ pip install django
+
+3. Para pegar os pacotes da virtualenv:
+$ pip freeze > requirements.txt
