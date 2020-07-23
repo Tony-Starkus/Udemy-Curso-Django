@@ -32,7 +32,7 @@ $ pip3 install whitenoise gunicorn
 5. Criar/atualizar requirements.txt
 $ pip3 freeze > requirements.txt
 
-6. Criar arquivo "ProcFile" no diretório do projeto.
+6. Criar arquivo "Procfile" no diretório do projeto.
 
     6.1 Colocar dentro do arquivo (Para exemplo, o nome do projeto é django1) -> web: gunicorn django1.wsgi --log-file -
 

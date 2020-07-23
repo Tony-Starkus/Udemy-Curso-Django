@@ -27,7 +27,7 @@ SECRET_KEY = '0093qcsgdn$^m!6u251-il*v^-)^4*yx%ee^=$3vm@=%#+6$wd'
 # DEBUG False = Modo Produção.
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["cursodjangobasico.herokuapp.com"]
 
 
 # Application definition
