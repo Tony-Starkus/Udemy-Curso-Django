@@ -17,3 +17,7 @@ $ pip3 install whitenoise gunicorn
     *.pyc
     .idea
 }
+
+3. Ter conta no Heroku
+
+4. Seguir configuração: https://devcenter.heroku.com/articles/getting-started-with-python
