@@ -20,4 +20,26 @@ $ pip3 install whitenoise gunicorn
 
 3. Ter conta no Heroku
 
-4. Seguir configuração: https://devcenter.heroku.com/articles/getting-started-with-python
+4. Seguir configuração do Heroku CLI: https://devcenter.heroku.com/articles/getting-started-with-python
+
+    4.1 Após instalar, executar o heroku na máquina e fazer login:
+    $ heroku login
+    
+5. Criar arquivo "runtime.txt" no diretório do projeto
+
+    5.1 Colocar versão do python nesse arquivo. Ex: python-3.7.8
+
+5. Criar/atualizar requirements.txt
+$ pip3 freeze > requirements.txt
+
+6. Criar arquivo "ProcFile" no diretório do projeto.
+
+    6.1 Colocar dentro do arquivo (Para exemplo, o nome do projeto é django1) -> web: gunicorn django1.wsgi --log-file -
+
+7. Criar uma aplicação heroku:
+   # O nome da aplicação não pode existir, pois o nome vai ser usado como dominio
+   Ex: heroku create djangoproject --buildpack heroku/python
+
+8. CASO O PROJETO SE ENCONTRA EM UM SUBDIRETÓRIO E NÃO NA RAIZ DO REPOSITÓRIO:
+    link: https://medium.com/@shalandy/deploy-git-subdirectory-to-heroku-ea05e95fce1f
+    Ex: $ git subtree push --prefix path/to/subdirectory heroku master
