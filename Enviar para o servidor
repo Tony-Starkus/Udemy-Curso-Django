@@ -1,0 +1,19 @@
+1. Instalar whitenoise e gunicorn
+$ pip3 install whitenoise gunicorn
+# whitenoise -> Para cuidar dos arquivos estáticos, já que o Django não cuida desses arquivos em modo de produção.
+# gunicorn -> Rodar a aplicação Django no servidor.
+
+2. No settings.py
+
+    2.1 Configurar a variável ALLOWED_HOST
+
+    2.2 Na variável MIDDLEWARE, colocar como segundo item da lista: "whitenoise.middleware.WhiteNoiseMiddleware"
+
+
+!Opcional: Configurar .gitignore {
+    DjangoEnv
+    __pycache__
+    *.*~
+    *.pyc
+    .idea
+}

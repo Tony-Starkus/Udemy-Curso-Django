@@ -6,3 +6,13 @@ $ pip install django
 
 3. Para pegar os pacotes da virtualenv:
 $ pip freeze > requirements.txt
+
+4. Criar um projeto Django:
+$ django-admin startproject <nome-projeto> .
+# OBS: O ponto "." é para não criar uma pasta com o nome do projeto, e sim criar o projeto na pasta atual.
+
+5. Criar um app Django:
+$ django-admin startapp <nome-app>
+# OBS: Adicionar o nome do app no settings.py na lista INSTALLED_APPS
+
+5. Para definir o nome da pasta que vai conter os templates, na lista TEMPLATES no settings.py, colocar na chave DIR o nome do diretório.
