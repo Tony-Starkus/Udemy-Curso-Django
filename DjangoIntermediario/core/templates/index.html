@@ -1,0 +1,58 @@
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    {% bootstrap_css %}
+</head>
+<body>
+    <div class="container">
+        <h1>Produtos</h1>
+        <h3>Django Intermediário</h3>
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Produto</th>
+              <th scope="col">Preço</th>
+              <th scope="col">Estoque</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for produto in produtos %}
+            <tr>
+              <th scope="row">{{ produto.id }}</th>
+                <td>
+                    <a href="#modal{{ produto.id }}" data-toggle="modal">{{ produto.nome }}</a>
+                </td>
+              <td>{{ produto.preco }}</td>
+              <td>{{ produto.estoque }}</td>
+            </tr>
+
+            <div class="modal fade" id="modal{{produto.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">{{ produto.nome }}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="img-fluid" alt="{{ produto.nome }}" src="{{ produto.imagem.url }}"/>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </tbody>
+        </table>
+    </div>
+    {% bootstrap_javascript jquery='full' %}
+</body>
+</html>

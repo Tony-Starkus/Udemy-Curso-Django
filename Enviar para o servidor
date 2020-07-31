@@ -2,6 +2,11 @@
 $ pip3 install whitenoise gunicorn
 # whitenoise -> Para cuidar dos arquivos estáticos, já que o Django não cuida desses arquivos em modo de produção.
 # gunicorn -> Rodar a aplicação Django no servidor.
+!OPCIONAL: # dj_database_url e psycopg2-binary-> Isso serve para quando está utilizando mysql e quer upar no Heroku, o Heroku não aceitar nada além do postgresql, essa biblioteca envia a configuração default da variavel DATABASES do django para o heroku. {
+    DATABASES = {
+        'default': dj_database_url.config()
+    }
+}
 
 2. No settings.py
 

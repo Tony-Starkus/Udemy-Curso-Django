@@ -1,0 +1,5 @@
+Sobre usar o MySQL, se acontecer algum problema na conexão com o Django, tente:
+$ sudo apt-get install libmysqlclient-dev python3-dev
+
+Na venv:
+$ pip3 install MySQL
