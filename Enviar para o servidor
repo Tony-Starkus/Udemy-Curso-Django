@@ -45,6 +45,15 @@ $ pip3 freeze > requirements.txt
    # O nome da aplicação não pode existir, pois o nome vai ser usado como dominio
    Ex: heroku create djangoproject --buildpack heroku/python
 
-8. CASO O PROJETO SE ENCONTRA EM UM SUBDIRETÓRIO E NÃO NA RAIZ DO REPOSITÓRIO:
+8. Executar (não entendi, mas...):
+    $ heroku git:remote -a <nome da aplicação>
+    Ex: $ heroku git:remote -a djangointermediario
+
+9. CASO O PROJETO SE ENCONTRA EM UM SUBDIRETÓRIO E NÃO NA RAIZ DO REPOSITÓRIO:
     link: https://medium.com/@shalandy/deploy-git-subdirectory-to-heroku-ea05e95fce1f
     Ex: $ git subtree push --prefix path/to/subdirectory heroku master
+
+
+10. Para executar comandos lá no servidor, usar:
+    $ heroku run <comando>
+    Ex: $ heroku run python manage.py createsuperuser
