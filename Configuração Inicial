@@ -16,3 +16,6 @@ $ django-admin startapp <nome-app>
 # OBS: Adicionar o nome do app no settings.py na lista INSTALLED_APPS
 
 5. Para definir o nome da pasta que vai conter os templates, na lista TEMPLATES no settings.py, colocar na chave DIR o nome do diretório.
+
+6. Para executar os testes:
+$ python manage.py test

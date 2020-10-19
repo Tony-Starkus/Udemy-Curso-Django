@@ -43,7 +43,7 @@ $ pip3 freeze > requirements.txt
 
 7. Criar uma aplicação heroku:
    # O nome da aplicação não pode existir, pois o nome vai ser usado como dominio
-   Ex: heroku create djangoproject --buildpack heroku/python
+   Ex: heroku create <nome-da-aplicacao> --buildpack heroku/python
 
 8. Executar (não entendi, mas...):
     $ heroku git:remote -a <nome da aplicação>
@@ -52,7 +52,9 @@ $ pip3 freeze > requirements.txt
 9. CASO O PROJETO SE ENCONTRA EM UM SUBDIRETÓRIO E NÃO NA RAIZ DO REPOSITÓRIO:
     link: https://medium.com/@shalandy/deploy-git-subdirectory-to-heroku-ea05e95fce1f
     Ex: $ git subtree push --prefix path/to/subdirectory heroku master
+    OBS: SEMPRE QUE MODIFICAR O PROJETO E UPAR NO GIT, É NECESSÁRIO FAZER O DEPLOY NOVAMENTE, O CÓDIGO ACIMA FAZ ISSO!!!!!!!!!
 
+OBS: LEMBRAR DE FAZER AS MIGRATIONS NO HEROKU!
 
 10. Para executar comandos lá no servidor, usar:
     $ heroku run <comando>

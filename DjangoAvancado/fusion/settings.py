@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'django.middleware.locale.LocaleMiddleware',  # Detectar a linguagem do navegador.
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -77,6 +78,7 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+"""
 DATABASES = {
     'default': dj_database_url.config()
 }
@@ -91,7 +93,7 @@ DATABASES = {
         'PORT': '5432'
     }
 }
-"""
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -136,7 +138,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = 'media/'
 
 # Email teste console
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Email produção
 # EMAIL_HOST = 'localhost'
@@ -146,3 +148,5 @@ MEDIA_URL = 'media/'
 # DEFAULT_FROM_EMAIL = 'contato@fusion.com.br'
 
 LOGOUT_REDIRECT_URL = 'index'  # Quando deslogar do Django Admin, vai ser enviado para o index.
+
+LOCALE_PATHS = (os.path.join(BASE_DIR, "locale"),)  # Relacionado à traduções

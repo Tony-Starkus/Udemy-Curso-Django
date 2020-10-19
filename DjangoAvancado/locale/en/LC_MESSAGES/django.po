@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-01 11:11-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: core/forms.py:9 core/models.py:59
+msgid "Nome"
+msgstr ""
+
+#: core/forms.py:10
+msgid "E-mail"
+msgstr ""
+
+#: core/forms.py:11
+msgid "Assunto"
+msgstr ""
+
+#: core/forms.py:12
+msgid "Mensagem"
+msgstr ""
+
+#: core/models.py:17
+msgid "Criação"
+msgstr ""
+
+#: core/models.py:19
+msgid "Atualização"
+msgstr ""
+
+#: core/models.py:20
+msgid "Ativo?"
+msgstr ""
+
+#: core/models.py:28
+msgid "Engrenagem"
+msgstr ""
+
+#: core/models.py:29
+msgid "Gáfico"
+msgstr ""
+
+#: core/models.py:30
+msgid "Usuários"
+msgstr ""
+
+#: core/models.py:31
+msgid "Design"
+msgstr ""
+
+#: core/models.py:32
+msgid "Mobile"
+msgstr ""
+
+#: core/models.py:33
+msgid "Foguete"
+msgstr ""
+
+#: core/models.py:40
+msgid "Serviço"
+msgstr ""
+
+#: core/models.py:41
+msgid "Serviços"
+msgstr ""
+
+#: core/models.py:51 core/models.py:60
+msgid "Cargo"
+msgstr ""
+
+#: core/models.py:52
+msgid "Cargos"
+msgstr ""
+
+#: core/models.py:61
+msgid "Bio"
+msgstr ""
+
+#: core/models.py:64
+msgid "Imagem"
+msgstr ""
+
+#: core/models.py:71
+msgid "Funcionário"
+msgstr ""
+
+#: core/models.py:72
+msgid "Funcionários"
+msgstr ""
+
+#: core/views.py:28
+msgid "E-mail enviado com sucesso"
+msgstr ""
+
+#: core/views.py:32
+msgid "Erro ao enviar e-mail"
+msgstr ""
