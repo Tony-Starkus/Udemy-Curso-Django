@@ -1,0 +1,1 @@
+To use this project, it's necessary download GeoLite2 data. Check Udemy course.

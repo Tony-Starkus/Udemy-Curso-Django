@@ -1,0 +1,6 @@
+- Cross Site Scripting (XSS)
+- Cross Site Request Forgery (CSRF)
+- SQL Injection
+- Suporta HTTPS e TLS
+- Armazenamento Seguro de Senhas
+    - Algoritmo PBKDF2 com hash SHA256, recomendado pelo NIST
